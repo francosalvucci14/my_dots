@@ -6,7 +6,7 @@ Add config for Neovim and image
 
 Base config for LunarVim
 
-![[.assets/Lvim.png]]
+![[Lvim config]](https://github.com/francosalvucci14/my_dots/blob/main/.assets/Lvim.png)
 
 # Wallpapar
 
