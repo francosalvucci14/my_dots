@@ -1,0 +1,133 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+# All imports must either be absolute paths starting with `/`, or paths relative
+# to the user's home directory starting with `~/`.
+#import:
+# uncomment the flavour you want below:
+#- ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+#- ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+#- ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
+#- ~/.config/alacritty/catppuccin/catppuccin-latte.yml
+# Any items in the `env` entry below will be added as
+# environment variables. Some entries may override variables
+# set by alacritty itself.
+env:
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  TERM: "xterm-256color"
+
+window:
+  # Window dimensions (changes require restart)
+  
+  #padding:
+  x: 20
+  y: 20
+
+  # Spread additional padding evenly around the terminal content.
+  #dynamic_padding: false
+  # Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  #
+  # Values for `decorations` (macOS only):
+  #     - transparent: Title bar, transparent background and title bar buttons
+  #     - buttonless: Title bar, transparent background and no title bar buttons
+  decorations: None
+
+  # Background opacity
+  # Window opacity as a floating point number from `0.0` to `1.0`.
+  # The value `0.0` is completely transparent and `1.0` is opaque.
+  opacity: 0.98
+
+  
+  # Window title
+  title: <Title>
+  # Allow terminal applications to change Alacritty's window title.
+  dynamic_title: false
+  
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 99000
+  # Scrolling distance multiplier.
+  #multiplier: 3
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux/BSD) monospace
+    #   - (Windows) Consolas
+    family: "JetBrainsMono Nerd Font"
+
+    # The `style` can be specified to pick a specific face.
+    style: Medium
+    
+  # Point size
+  size: 15.0
+  
+# If `true`, bold text is drawn using the bright color variants.
+#draw_bold_text_with_bright_colors: false
+# Colors (Tomorrow Night)
+colors:
+  name: Google (dark)
+  author: Chris Kempson
+  primary:
+    background: "#1d1f21"
+    foreground: "#c5c8c6"
+  cursor:
+    text: "#1d1f21"
+    cursor: "#c5c8c6"
+  normal:
+    black: "#1d1f21"
+    red: "#cc342b"
+    green: "#198844"
+    yellow: "#fba922"
+    blue: "#3971ed"
+    magenta: "#a36ac7"
+    cyan: "#3971ed"
+    white: "#c5c8c6"
+  bright:
+    black: "#969896"
+    red: "#cc342b"
+    green: "#198844"
+    yellow: "#fba922"
+    blue: "#3971ed"
+    magenta: "#a36ac7"
+    cyan: "#3971ed"
+    white: "#ffffff"
+cursor:
+  # Cursor style
+  style:
+    # Cursor shape
+    #
+    # Values for `shape`:
+    #   - ▇ Block
+    #   - _ Underline
+    #   - | Beam
+    shape: Beam
+
+    # Cursor blinking state
+    #
+    # Values for `blinking`:
+    #   - Never: Prevent the cursor from ever blinking
+    #   - Off: Disable blinking by default
+    #   - On: Enable blinking by default
+    #   - Always: Force the cursor to always blink
+    blinking: On
+  
+# Live config reload (changes require restart)
+live_config_reload: true
+theme: Google.dark
+
