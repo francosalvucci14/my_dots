@@ -10,11 +10,11 @@
 
 **Base config for LunarVim ~/.config/lvim**
 
-# Wallpaper
+<!--# Wallpaper
 
 ![[Wallpaper]](https://github.com/francosalvucci14/my_dots/blob/main/.assets/wallpaper.png)
 
-**Personal Wallpaper**
+**Personal Wallpaper**-->
 
 # Term
 
