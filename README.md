@@ -12,7 +12,7 @@
 
 # Wallpaper
 
-![[Wallpaper]]()
+![[Wallpaper]](https://github.com/francosalvucci14/my_dots/blob/main/.assets/wallpaper.png)
 
 **Personal Wallpaper**
 
