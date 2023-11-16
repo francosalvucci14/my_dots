@@ -1,6 +1,6 @@
 # NeoVim
 
-Add config for Neovim and image
+![[Nvim Confi]](https://github.com/francosalvucci14/my_dots/blob/main/.assets/Nvim.png)
 
 # LunarVim
 
