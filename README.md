@@ -20,4 +20,4 @@
 
 # Term
 
-Add term image
+![[Term]](https://github.com/francosalvucci14/my_dots/blob/main/.assets/Term.png)
