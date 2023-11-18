@@ -2,9 +2,11 @@
 
 <!--![[Nvim Confi]](https://github.com/francosalvucci14/my_dots/blob/main/.assets/NvimComplete.png)-->
 
+https://github.com/francosalvucci14/my_dots/assets/87621228/8a5096dd-ef24-4e94-8abf-402be58f7365
+
+
 **Custom config for NeoVim ~/.config/nvim**
 
-https://github.com/francosalvucci14/my_dots/assets/87621228/8a5096dd-ef24-4e94-8abf-402be58f7365
 
 <!--After this, I switched to [LazyVim](https://github.com/LazyVim/LazyVim/tree/main) (and for now I use the preset configuration, then maybe I will change)-->
 
