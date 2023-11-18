@@ -20,19 +20,20 @@ return require('packer').startup(function(use)
       'nvim-tree/nvim-web-devicons', -- optional, for file icons
     },
     -- Dracula theme for styling
- -- use 'Mofiqul/dracula.nvim'
- use { "catppuccin/nvim", as = "catppuccin" }
+-- use 'Mofiqul/dracula.nvim'
+--  use { "catppuccin/nvim", as = "catppuccin" }
  }
--- use {
--- 	'folke/trouble.nvim',
---   requires = {
---     'nvim-tree/nvim-web-devicons', -- optional, for file icons
---   },
+ use {
+ 	'folke/trouble.nvim',
+   requires = {
+     'nvim-tree/nvim-web-devicons', -- optional, for file icons
+   },
+   
 	
--- }
+ }
 use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
- use 'folke/which-key.nvim'
--- use 'folke/tokyonight.nvim'
+ use 'folke/which-key.nvim' 
+ use 'folke/tokyonight.nvim'
  -- Treesitter
  use {
   -- recommended packer way of installing it is to run this function, copied from documentation
@@ -74,11 +75,22 @@ use {
       -- config
       theme = 'hyper',
     config = {
+	header = {"                                   ",
+  "                                                     ",
+  "███    ██ ███████  ██████  ██    ██ ██ ███    ███ ",
+  "████   ██ ██      ██    ██ ██    ██ ██ ████  ████    ",
+  "██ ██  ██ █████   ██    ██ ██    ██ ██ ██ ████ ██   ",
+  "██  ██ ██ ██      ██    ██  ██  ██  ██ ██  ██  ██   ",  
+  "██   ████ ███████  ██████    ████   ██ ██      ██   ",
+  "                                                      ",
+  "                                                      ",
+  "                                                      "},
       week_header = {
-       enable = true,
+       enable = false,
       },
+      mru = { limit = 10, icon = '  ', label = 'Most Recent Files', cwd_only = false },
       shortcut = {
-        --{ desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
+        { desc = '󰊳 Update', group = '@property', action = 'PackerSync', key = 'u' },
         {
           icon = ' ',
           icon_hl = '@variable',
@@ -87,13 +99,13 @@ use {
           action = 'Telescope find_files',
           key = 'f',
         },
-        {
+        --{
 	   -- icon = ''	
-           desc = ' Apps',
-           group = 'Label',
-           action = 'Telescope diagnostics',
-           key = 'a',
-        },
+        --   desc = ' Apps',
+        --   group = 'Label',
+        --   action = 'Telescope diagnostics',
+        --   key = 'a',
+        --},
         -- {
         --   desc = ' dotfiles',
         --   group = 'Number',
