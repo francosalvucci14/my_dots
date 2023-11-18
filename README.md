@@ -2,7 +2,7 @@
 
 <!--![[Nvim Confi]](https://github.com/francosalvucci14/my_dots/blob/main/.assets/NvimComplete.png)-->
 
-https://github.com/francosalvucci14/my_dots/assets/87621228/8a5096dd-ef24-4e94-8abf-402be58f7365
+![[Nvim config video]](https://github.com/francosalvucci14/my_dots/assets/87621228/8a5096dd-ef24-4e94-8abf-402be58f7365)
 
 
 **Custom config for NeoVim ~/.config/nvim**
