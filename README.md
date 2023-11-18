@@ -1,6 +1,8 @@
 # NeoVim
 
-![[Nvim Confi]](https://github.com/francosalvucci14/my_dots/blob/main/.assets/NvimComplete.png)
+<!--![[Nvim Confi]](https://github.com/francosalvucci14/my_dots/blob/main/.assets/NvimComplete.png)-->
+
+![[Nvim video config]](https://github.com/francosalvucci14/my_dots/blob/main/.assets/nvim.mkv)
 
 **Custom config for NeoVim ~/.config/nvim**
 
