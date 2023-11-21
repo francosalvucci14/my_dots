@@ -103,7 +103,7 @@ return require('packer').startup(function(use)
 							icon_hl = '@variable',
 							desc = 'Files',
 							group = 'Label',
-							action = 'Telescope find_files',
+							action = 'Telescope find_files hidden=true',
 							key = 'f',
 						},
 						--{
