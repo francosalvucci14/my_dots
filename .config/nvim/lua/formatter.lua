@@ -7,6 +7,8 @@ format_on_save.setup({
 		".local/share/nvim/",
 	},
 	formatter_by_ft = {
+		-- c = formatters.clang_format,
+		c = formatters.lsp,
 		css = formatters.lsp,
 		html = formatters.lsp,
 		java = formatters.lsp,

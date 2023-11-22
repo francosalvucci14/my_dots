@@ -32,7 +32,7 @@ return require('packer').startup(function(use)
 
 
 	}
-
+	use "lukas-reineke/indent-blankline.nvim"
 	-- for autoformatting
 	use "elentok/format-on-save.nvim"
 	-- bufferline
