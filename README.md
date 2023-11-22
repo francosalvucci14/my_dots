@@ -7,6 +7,20 @@
 
 **Custom config for NeoVim ~/.config/nvim**
 
+**Plugins I used** : 
+- Mason
+- gopls -- LS for Go
+- pyright -- LS for Python
+- lua-lsp -- LS for Lua
+- sqlls -- LS for SQL
+- nvim-cmp -- for code completion
+- nvim-tree -- tree for file explorer
+- nvim-treesitter -- for syntax highlight
+- Telescope -- for file search
+- lualine -- statusbar
+- bufferline -- for buffers
+- Trobule -- for trouble window
+- format-on-save -- autoformatter on save
 
 <!--After this, I switched to [LazyVim](https://github.com/LazyVim/LazyVim/tree/main) (and for now I use the preset configuration, then maybe I will change)-->
 
