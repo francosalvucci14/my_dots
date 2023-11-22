@@ -97,7 +97,7 @@ return require('packer').startup(function(use)
 					},
 					mru = { limit = 10, icon = '  ', label = 'Most Recent Files', cwd_only = false },
 					shortcut = {
-						{ desc = '󰊳 Update', group = '@property', action = 'PackerSync', key = 'u' },
+						{ desc = '󰊳 Update', group = '@property', action = 'PackerUpdate', key = 'u' },
 						{
 							icon = ' ',
 							icon_hl = '@variable',
@@ -106,6 +106,7 @@ return require('packer').startup(function(use)
 							action = 'Telescope find_files hidden=true',
 							key = 'f',
 						},
+						{ desc = '↺ Sync', group = '@property', action = 'PackerSync', key = 's' },
 						--{
 						-- icon = ''	
 						--   desc = ' Apps',
@@ -131,7 +132,7 @@ return require('packer').startup(function(use)
 					-- 	"   \\_/   \\_______/   \\_/   |/     \\|  (_______/|/     \\|  |/       |/   \\__/(_______/(_______)|/    )_)|/     \\|",
 					-- 	"                                                                                                                "
 					-- }, -- footer
-					
+
 				},
 			}
 		end,
