@@ -1,5 +1,5 @@
 -- Require LSP config which we can use to attach gopls
-lspconfig = require "lspconfig"
+lspconfig = require("lspconfig")
 util = require "lspconfig/util"
 -- Since we installed lspconfig and imported it, we can reach
 -- gopls by lspconfig.gopls
@@ -7,16 +7,10 @@ util = require "lspconfig/util"
 
 -- local on_attach = config.on_attach
 -- local capabilities = config.capabilities
-lspconfig.pyright.setup ({
- -- on_attach = require("jpv"),
-  --capabilities = capabilities,
-  filetypes = {"python"},
-  settings = {
-  	python = {
-		analysis = {
-			autoSearchPaths = true,
-			useLibraryCodeForTypes = true,
-		},
-	},
-  },
+lspconfig.pylsp.setup({
+	-- on_attach = require("jpv"),
+	--capabilities = capabilities,
+	cmd = { "pylsp" },
+	filetypes = { "py" },
+
 })

@@ -2,6 +2,7 @@ require("ibl").setup {
 	indent = {
 		char = "│",
 		tab_char = "│",
+		-- highlight = { "Function", "Label" },
 	},
 	-- scope = { enabled = true },
 	exclude = {
@@ -15,4 +16,5 @@ require("ibl").setup {
 			"toggleterm",
 		},
 	},
+
 }

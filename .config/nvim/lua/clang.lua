@@ -1,6 +1,6 @@
 lspconfig = require "lspconfig"
 
 lspconfig.clangd.setup {
-	-- cmd = { "clangd" },
+	cmd = { "clangd" },
 	filetypes = { "c", "cpp" },
 }
