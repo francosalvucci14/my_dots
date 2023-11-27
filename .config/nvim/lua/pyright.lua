@@ -7,7 +7,7 @@ util = require "lspconfig/util"
 
 -- local on_attach = config.on_attach
 -- local capabilities = config.capabilities
-lspconfig.pylsp.setup({
+lspconfig.pyright.setup({
 	-- on_attach = require("jpv"),
 	--capabilities = capabilities,
 	cmd = { "pylsp" },

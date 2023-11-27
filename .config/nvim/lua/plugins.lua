@@ -24,7 +24,12 @@ return require('packer').startup(function(use)
 		--  use { "catppuccin/nvim", as = "catppuccin" }
 	}
 	use "L3MON4D3/LuaSnip"
-	use "rafamadriz/friendly-snippets"
+	use {
+		"rafamadriz/friendly-snippets",
+		config = function()
+			require("luasnip.loaders.from_vscode").lazy_load()
+		end,
+	}
 	use {
 		'folke/trouble.nvim',
 		requires = {
