@@ -13,6 +13,8 @@ return require('packer').startup(function(use)
 	use 'hrsh7th/cmp-path'
 	use 'hrsh7th/cmp-buffer'
 	use 'hrsh7th/vim-vsnip'
+	-- DAP for debugging
+	use 'mfussenegger/nvim-dap'
 	-- File explorer tree
 	use {
 		'nvim-tree/nvim-tree.lua',
@@ -24,6 +26,7 @@ return require('packer').startup(function(use)
 		--  use { "catppuccin/nvim", as = "catppuccin" }
 	}
 	use "L3MON4D3/LuaSnip"
+	use 'neoclide/coc.nvim'
 	use {
 		"rafamadriz/friendly-snippets",
 		config = function()

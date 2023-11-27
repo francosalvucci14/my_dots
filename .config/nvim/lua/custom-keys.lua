@@ -18,4 +18,10 @@ vim.keymap.set("n", "p", "+p", { desc = "Paste from clipboard" })
 vim.keymap.set("n", "pp", "+pp", { desc = "Paste from clipboard" })
 vim.keymap.set("n", "P", "+P", { desc = "Paste from clipboard" })
 
+-- nvim-dap keymappings
+-- Press f5 to debug
+map('n', '<F5>', [[:lua require'dap'.continue()<CR>]], { desc = { "Start debug" } })
+-- Press CTRL + b to toggle regular breakpoint
+map('n', '<C-b>', [[:lua require'dap'.toggle_breakpoint()<CR>]], { desc = { "Toggle breakpoint" } })
+
 vim.g.mapleader = " "
