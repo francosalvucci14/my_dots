@@ -21,6 +21,11 @@
 - bufferline -- for buffers
 - Trobule -- for trouble window
 - format-on-save -- autoformatter on save
+- nvim-dap -- for DAP 
+- nvim-dap-ui -- UI like VSCode for DAP 
+- nvim-dap-python -- DAP for Python
+- coc -- host LS 
+- coc-python -- COC exts for Python
 
 <!--After this, I switched to [LazyVim](https://github.com/LazyVim/LazyVim/tree/main) (and for now I use the preset configuration, then maybe I will change)-->
 
