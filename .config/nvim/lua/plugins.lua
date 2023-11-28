@@ -15,6 +15,10 @@ return require('packer').startup(function(use)
 	use 'hrsh7th/vim-vsnip'
 	-- DAP for debugging
 	use 'mfussenegger/nvim-dap'
+	use { 'mfussenegger/nvim-dap-python', ft = "python",
+		requires = { 'mfussenegger/nvim-dap', "rcarriga/nvim-dap-ui", }, }
+	-- DAP UI
+	use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
 	-- File explorer tree
 	use {
 		'nvim-tree/nvim-tree.lua',
@@ -25,8 +29,11 @@ return require('packer').startup(function(use)
 		-- use 'Mofiqul/dracula.nvim'
 		--  use { "catppuccin/nvim", as = "catppuccin" }
 	}
+
+
 	use "L3MON4D3/LuaSnip"
-	use 'neoclide/coc.nvim'
+	use 'neoclide/coc.nvim' -- for LSP
+
 	use {
 		"rafamadriz/friendly-snippets",
 		config = function()
