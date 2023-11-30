@@ -1,6 +1,6 @@
 local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
 require('dap-python').setup(path)
-
+require('dap-python').test_runner = 'pytest'
 -- fetch the dap plugin
 local dap = require('dap')
 -- Setup DapUI
@@ -10,11 +10,11 @@ dapui.setup()
 
 -- dap fires events, we can listen on them to open UI on certain events
 dap.listeners.after.event_initialized["dapui_config"] = function()
-  dapui.open()
+	dapui.open()
 end
 dap.listeners.before.event_terminated["dapui_config"] = function()
-  dapui.close()
+	dapui.close()
 end
 dap.listeners.before.event_exited["dapui_config"] = function()
-  dapui.close()
+	dapui.close()
 end

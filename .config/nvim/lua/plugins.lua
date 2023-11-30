@@ -15,8 +15,14 @@ return require('packer').startup(function(use)
 	use 'hrsh7th/vim-vsnip'
 	-- DAP for debugging
 	use 'mfussenegger/nvim-dap'
-	use { 'mfussenegger/nvim-dap-python', ft = "python",
-		requires = { 'mfussenegger/nvim-dap', "rcarriga/nvim-dap-ui", }, }
+	use {
+		'mfussenegger/nvim-dap-python', -- debug configuration for py
+		build = ':TSInstall python',
+		config = function()
+			require('dap-python').setup('~/.local/share/nvim/mason/packages/debugpy/venv/bin/python') -- system python, requires `pip install debugpy`
+		end
+	}
+
 	-- DAP UI
 	use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
 	-- File explorer tree
@@ -32,7 +38,7 @@ return require('packer').startup(function(use)
 
 
 	use "L3MON4D3/LuaSnip"
-	use 'neoclide/coc.nvim' -- for LSP
+	use { 'neoclide/coc.nvim', branch = 'release' } -- for LSP
 
 	use {
 		"rafamadriz/friendly-snippets",
