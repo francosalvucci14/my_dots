@@ -165,6 +165,7 @@ return require('packer').startup(function(use)
 						--   action = 'Telescope dotfiles',
 						--   key = 'd',
 						-- },
+						{ desc = " Exit", group = "Label", action = "q", key = "c" },
 					},
 					-- footer = {},
 
@@ -173,4 +174,13 @@ return require('packer').startup(function(use)
 		end,
 		requires = { 'nvim-tree/nvim-web-devicons' }
 	}
+	-- Packer:
+	-- use 'Mofiqul/vscode.nvim'
+	-- packer
+	-- use {
+	-- 	    "askfiy/visual_studio_code",
+	-- 	    config = function()
+	-- 		    vim.cmd([[colorscheme visual_studio_code]])
+	-- 	    end,
+	--     }
 end)
