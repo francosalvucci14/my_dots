@@ -6,13 +6,15 @@ vim.opt.completeopt = { 'menuone', 'noselect', 'noinsert', 'preview' }
 -- shortmess is used to avoid excessive messages
 vim.opt.shortmess = vim.opt.shortmess + { c = true }
 
+require('luasnip.loaders.from_vscode').lazy_load()
+
 local cmp = require 'cmp'
 cmp.setup({
 	-- Required by vsnip
 	snippet = {
 		expand = function(args)
-			vim.fn["vsnip#anonymous"](args.body) --se usi vsnip
-			-- require('luasnip').lsp_expand(args.body)
+			-- vim.fn["vsnip#anonymous"](args.body) --se usi vsnip
+			require('luasnip').lsp_expand(args.body)
 		end,
 	},
 	-- Add Mappings to control the code suggestions
@@ -40,6 +42,7 @@ cmp.setup({
 	-- sources are the installed sources that can be used for code suggestions
 	sources = {
 		{ name = 'path' },
+		{ name = 'luasnip' },
 		{ name = 'nvim_lsp',               keyword_length = 3 },
 		{ name = 'nvim_lsp_signature_help' },
 		{ name = 'nvim_lua',               keyword_length = 2 },
