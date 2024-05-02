@@ -40,7 +40,7 @@ return require('packer').startup(function(use)
 
 	use "L3MON4D3/LuaSnip"
 	use { 'saadparwaiz1/cmp_luasnip' }
-	use { 'neoclide/coc.nvim', branch = 'release' } -- for LSP
+	-- use { 'neoclide/coc.nvim', branch = 'release' } -- for LSP
 
 	use {
 		"rafamadriz/friendly-snippets",
