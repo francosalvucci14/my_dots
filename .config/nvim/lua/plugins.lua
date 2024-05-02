@@ -174,7 +174,7 @@ return require('packer').startup(function(use)
 					week_header = {
 						enable = false,
 					},
-					mru = { limit = 10, icon = '  ', label = 'Most Recent Files', cwd_only = false },
+					mru = { limit = 5, icon = '  ', label = 'Most Recent Files', cwd_only = false },
 					shortcut = {
 						{ desc = '󰊳 Update', group = '@property', action = 'PackerUpdate', key = 'u' },
 						{
