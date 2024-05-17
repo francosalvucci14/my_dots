@@ -5,8 +5,9 @@ local map = vim.api.nvim_set_keymap
 map('n', 'n', [[:NvimTreeToggle<CR>]], {})
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
 -- update leader key to ,
--- vim.keymap.set("n", "<leader>ot", function() require("trouble").open() end)
--- vim.keymap.set("n", "<leader>ct", function() require("trouble").close() end)
+
+map('n', '<C-g>', [[:!gcc % -o $(basename % .c) && ./$(basename % .c)<CR>]], { desc = "Compile and run c programs" })
+
 vim.keymap.set("n", "<C-Up>", [[:Trouble<CR>]], { desc = 'Open toggle' })
 vim.keymap.set("n", "<C-Down>", [[:TroubleClose<CR>]], { desc = 'Close toggle' })
 

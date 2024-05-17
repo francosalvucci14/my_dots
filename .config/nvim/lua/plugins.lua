@@ -26,6 +26,8 @@ return require('packer').startup(function(use)
 
 	-- DAP UI
 	use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
+
+
 	-- File explorer tree
 	use {
 		'nvim-tree/nvim-tree.lua',
