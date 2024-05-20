@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
 
 	-- DAP UI
 	use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
-
+	-- Runner For C,C++
 
 	-- File explorer tree
 	use {
@@ -58,7 +58,7 @@ return require('packer').startup(function(use)
 
 
 	}
-	use "lukas-reineke/indent-blankline.nvim"
+	use { "lukas-reineke/indent-blankline.nvim", main = 'ibl' } --, version = '3.5' }
 	-- for autoformatting
 	use "elentok/format-on-save.nvim"
 	-- bufferline
@@ -82,7 +82,7 @@ return require('packer').startup(function(use)
 	}
 	-- Telescope used to fuzzy search files
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.0',
+		'nvim-telescope/telescope.nvim', tag = '0.1.6',
 		requires = {
 			'nvim-lua/plenary.nvim',
 			{

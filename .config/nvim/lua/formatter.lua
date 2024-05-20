@@ -12,7 +12,7 @@ format_on_save.setup({
 		css = formatters.lsp,
 		html = formatters.lsp,
 		java = formatters.lsp,
-		javascript = formatters.lsp,
+		javascript = formatters.biome,
 		json = formatters.lsp,
 		lua = formatters.lsp,
 		markdown = formatters.mdformat,
