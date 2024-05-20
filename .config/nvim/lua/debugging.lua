@@ -8,7 +8,6 @@ local dapui = require('dapui')
 -- set it up see more configs in their repo
 dapui.setup()
 
--- dap fires events, we can listen on them to open UI on certain events
 dap.listeners.after.event_initialized["dapui_config"] = function()
 	dapui.open()
 end

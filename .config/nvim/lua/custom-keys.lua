@@ -30,6 +30,8 @@ map('n', '<C-b>', [[:lua require'dap'.toggle_breakpoint()<CR>]], { desc = { "Tog
 map('n', '<C-d>', [[:NvimTreeToggle<CR> :lua require'dapui'.toggle()<CR>]], {})
 
 vim.g.mapleader = " "
+vim.keymap.set("n", "<leader>ls", function() require("live-server-nvim").start() end, { desc = "[L]ive Server [S]tart" }) -- For LiveServer
+vim.keymap.set("n", "<leader>lt", function() require("live-server-nvim").stop() end, { desc = "[L]ive Server S[t]op" })   -- For LiveServer
 
 -- Shift+arrows selection
 vim.api.nvim_set_keymap('n', '<S-Up>', 'v<Up>', { noremap = true })

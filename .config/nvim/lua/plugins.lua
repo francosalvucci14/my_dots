@@ -25,8 +25,8 @@ return require('packer').startup(function(use)
 	}
 
 	-- DAP UI
-	use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
-	-- Runner For C,C++
+	-- use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } }
+
 
 	-- File explorer tree
 	use {
@@ -38,7 +38,7 @@ return require('packer').startup(function(use)
 		-- use 'Mofiqul/dracula.nvim'
 		--  use { "catppuccin/nvim", as = "catppuccin" }
 	}
-
+	-- use { "catppuccin/nvim", as = "catppuccin" }
 
 	use "L3MON4D3/LuaSnip"
 	use { 'saadparwaiz1/cmp_luasnip' }
@@ -58,6 +58,10 @@ return require('packer').startup(function(use)
 
 
 	}
+
+	-- LiveServer
+	use "ngtuonghy/live-server-nvim"
+
 	use { "lukas-reineke/indent-blankline.nvim", main = 'ibl' } --, version = '3.5' }
 	-- for autoformatting
 	use "elentok/format-on-save.nvim"
