@@ -1,6 +1,5 @@
 -- fetch keymapiii
 local map = vim.api.nvim_set_keymap
-
 -- map the key n to run the command :NvimTreeToggle
 map('n', 'n', [[:NvimTreeToggle<CR>]], {})
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
@@ -22,12 +21,12 @@ vim.keymap.set("n", "<C-Down>", [[:TroubleClose<CR>]], { desc = 'Close toggle' }
 -- nvim-dap keymappings
 -- Press f5 to debug
 map('n', '<F5>', "<cmd>lua require('dap').continue()<cr>",
-	{ desc = { "Start debug" } })
+	{ desc = "Start debug" })
 -- Press CTRL + b to toggle regular breakpoint
-map('n', '<C-b>', [[:lua require'dap'.toggle_breakpoint()<CR>]], { desc = { "Toggle breakpoint" } })
+map('n', '<C-b>', [[:lua require'dap'.toggle_breakpoint()<CR>]], { desc = "Toggle breakpoint" })
 
 -- Press Ctrl+d to toggle debug mode, will remove NvimTree also
-map('n', '<C-d>', [[:NvimTreeToggle<CR> :lua require'dapui'.toggle()<CR>]], {})
+map('n', '<C-d>', [[:NvimTreeToggle<CR> :lua require'dapui'.toggle()<CR>]], { desc = "Toggle debug mode" })
 
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>ls", function() require("live-server-nvim").start() end, { desc = "[L]ive Server [S]tart" }) -- For LiveServer

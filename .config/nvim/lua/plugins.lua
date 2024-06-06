@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
 	}
 
 	-- DAP UI
-	-- use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } }
+	use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } }
 
 
 	-- File explorer tree
@@ -80,9 +80,14 @@ return require('packer').startup(function(use)
 
 	}
 	-- Lualine information / Status bar
+	--use {
+	--	'nvim-lualine/lualine.nvim',
+	--	requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+	--}
+
 	use {
 		'nvim-lualine/lualine.nvim',
-		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
 	-- Telescope used to fuzzy search files
 	use {
@@ -207,7 +212,7 @@ return require('packer').startup(function(use)
 						-- },
 						{ desc = " Exit", group = "Label", action = "q", key = "c" },
 					},
-					-- footer = {},
+					footer = {},
 
 				},
 			}
